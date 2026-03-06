@@ -1,2 +1,2 @@
-creditcard_2023.csv
-__pycache__
+*.csv
+.__pycache__/
