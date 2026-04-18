@@ -27,3 +27,69 @@ This project implements a deep learning model to detect fraudulent credit card t
 
 ## Course
 50.039 Deep Learning, Y2026
+
+
+## Load Pretrained Model
+
+To reproduce exact results:
+
+### Steps
+
+1. Clone repository:
+
+```
+https://github.com/killerdolp/Deep-learning-credit-card-fraud-detection.git
+```
+
+2. Run all code blocks in:
+
+```
+pretrainedModel.ipynb
+```
+
+### Required Files
+
+Located in `Training_weights/`:
+
+* `amount_scaler.pkl`
+* `model_weights.pth`
+
+
+
+## Reproducibility Instructions to train the weights
+
+### 1. Install Dependencies
+
+```bash
+pip install torch torchmetrics numpy pandas matplotlib scikit-learn imbalanced-learn
+```
+
+### 2. Download Dataset
+
+* Source: Kaggle Credit Card Fraud Detection (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+* Save as:
+
+```
+creditcard.csv
+```
+
+### 3. Data Splitting
+
+* Run all code blocks in:
+
+```
+split_data.ipynb
+```
+
+* Output: 3 CSV files (train/val/test)
+
+### 4. Train Model
+
+* Run all code blocks in:
+
+```
+Training_weights/modelfromscratch.ipynb
+```
+
+---
+
