@@ -5,17 +5,17 @@ This project implements a deep learning model to detect fraudulent credit card t
 
 ## Dataset
 - Source: [Kaggle Credit Card Fraud Detection Dataset 2023](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
-- 492 Frauds out of 284,807 transactions.
+- 492 Frauds out of 284,807 transactions (0.17% fraud).
 - Input Features: v1 to v28 (normalized) and transaction amount
 - Output: Class label (0 = legitimate, 1 = fraudulent)
 
 ## Model Architecture
 - **Type**: Binary Classification Neural Network
 - **Input Layer**: Normalized features from dataset
-- **Hidden Layers**: Linear layers with ReLU activation and dropout
-- **Output Layer**: Linear layer with Sigmoid activation
-- **Loss Function**: Binary Cross Entropy
-- **Evaluation Metric**: F-1 Score
+- **Hidden Layers**: Linear layers with ReLU activation 
+- **Output Layer**: Dropout before Linear layer
+- **Loss Function**: Binary Cross Entropy with Logits Loss
+- **Evaluation Metrics**: F-1 Score, Precision and AUC-ROC
 
 ## Team Members
 - Donovan Seow (1008166)
